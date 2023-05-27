@@ -17,6 +17,7 @@ model Jobs {
   updatedAt DateTime @updatedAt
   jobTitle     String   @db.VarChar(255)
   jobDescription   String
+  salary Int
   company String
   skills Skills[] @relation("JobSkills")
   published Boolean  @default(false)
